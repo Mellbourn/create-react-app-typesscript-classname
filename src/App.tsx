@@ -1,8 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import classNames from "classnames";
 
 function App() {
+  const Foo = classNames({ a: true, b: "other" });
+  console.log("Foo", Foo);
   return (
     <div className="App">
       <header className="App-header">
